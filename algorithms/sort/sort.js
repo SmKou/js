@@ -2,12 +2,14 @@ import { bubble_sort } from './bubble-sort.js'
 import { insertion_sort } from './insertion-sort.js'
 import { merge, merge_sort } from './merge-sort.js'
 import { quick_sort } from './quick-sort.js'
+import { radix_sort } from './radix-sort.js'
 
 const sorts = {
     bubble_sort,
     insertion_sort,
     merge_sort,
-    quick_sort
+    quick_sort,
+    radix_sort
 }
 
 const args = process.argv.slice(2)

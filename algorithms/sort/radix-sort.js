@@ -81,7 +81,9 @@ const tests = [
     [20, 51, 3, 801, 415, 62, 4, 17, 19, 11, 1, 100, 1244, 104, 944, 854, 34, 3000, 3001, 1200, 533]
 ]
 
-for (const test of tests) {
-    const res = radix(test)
-    console.log(test, res.up, res.down)
-}
+// for (const test of tests) {
+//     const res = radix(test)
+//     console.log(test, res.up, res.down)
+// }
+
+export { radix_sort }
