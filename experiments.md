@@ -109,6 +109,26 @@ proto.call(this, fn).val
 ## Set Canvas Order
 - change canvas size resets canvas
 
+## Destructuring vs Regular Params
+- Slowest by mag. 1: destructure map object
+- Reg. declaration: consistent .007
+- Destruct params: varies by mag. 1 from .002 to .0007, func faster by mag. 1 from .0002 to .00006
+
+Use of arrow, anon function and reg function hardly differed with reg. params and destruct map
+Varies between arrow, anon and reg for destruct object
+- arrow and anon on same mag.
+- func faster by mag. 1
+
+Test = avg. times across 100 rounds of 10_000 to 100_000_000 operations
+
+**Sample**
+```js
+const start_arrow = performance.now()
+for (let r = 0; r < round; ++r)
+    destruct_arrow({ val: 1 })
+results.destruct.destruct_arrow[idx] += performance.now() - start_arrow
+```
+
 -----------------------------------------
 
 ## Pending Experiments
