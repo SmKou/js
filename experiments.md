@@ -129,6 +129,8 @@ for (let r = 0; r < round; ++r)
 results.destruct.destruct_arrow[idx] += performance.now() - start_arrow
 ```
 
+**No results** on in-browser: browser crashed -> use web workers
+
 -----------------------------------------
 
 ## Pending Experiments
