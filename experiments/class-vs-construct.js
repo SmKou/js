@@ -24,7 +24,8 @@ const create_obj = (val) => ({ val })
 //     console.log(label_construct + time_construct)
 // })
 
-let t = 100
+const tests = 1000
+let t = tests
 const res_class = new Array(itr.length).fill(0)
 const res_obj = new Array(itr.length).fill(0)
 const test = () => {
@@ -47,12 +48,12 @@ const test = () => {
     }
 
     res_class.map((res, i) => {
-        const avg = res / 100
+        const avg = res / tests
         console.log(`create class (${itr[i]}): ${avg}`)
     })
 
     res_obj.map((res, i) => {
-        const avg = res / 100
+        const avg = res / tests
         console.log(`create obj (${itr[i]}): ${avg}`)
     })
 }
